@@ -7,4 +7,4 @@ RUN mkdir -p "$HTTPD_PREFIX" \
 WORKDIR $HTTPD_PREFIX
 COPY . /usr/local/bin/
 EXPOSE 80
-CMD ["foreground"]
+CMD [" /usr/sbin/apache2", "-D", "FOREGROUND"]
